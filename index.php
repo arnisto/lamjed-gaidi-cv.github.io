@@ -1,3 +1,6 @@
+<?php
+//lamjed gaidi supcom indp3 sni 
+?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
