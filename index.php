@@ -328,6 +328,9 @@
   </div>
 </div>
 <div class="section">
+<div style="margin: auto; width: 60%;padding: 10px; text-align: center;"><a href="blogs/p5.php" style="text-decoration:none;"><h3>more details ...</h3></a></div>
+</div>
+<div class="section">
   <div class="container cc-education">
     <div class="h4 text-center mb-4 title">Education</div>
     <div class="card">

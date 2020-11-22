@@ -1,0 +1,149 @@
+
+<html>
+    <head>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+      <link rel="icon" href="../images/GLicon.ico" type="image/x-icon">
+      <script src="../js/p5.min.js"></script>
+      <script src="../js/scketch2_polynom.js"></script>
+      <link href="../styles/ipr.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp%3Bskin=Sons-Of-Obsidian" ></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <!--
+        <script src="scketch.js"></script>
+      <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+      <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+      -->
+    </head>
+    <body>
+      <main>
+        <h1>Interactive ML with <a href="https://www.tensorflow.org/js" target="_blank" rel="noopener noreferrer">Tensorflow.js</a> & <a href="https://p5js.org/" style="color:crimson;" target="_blank" rel="noopener noreferrer">P5.JS</a></h1>
+        <p>TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
+
+          Tensorflow is a symbolic math library based on dataflow and differentiable programming. It is used for both research and production at Google.
+          
+          TensorFlow was developed by the Google Brain team for internal Google use. It was released under the Apache License 2.0 in 2015.</p>
+    <label for="idnameofdiv"> <marquee behavior="alternate" direction="up" width="100%">
+      <marquee direction="right" behavior="alternate">demo: make some click on the canvas</marquee>
+    </marquee> 
+     
+    </label>
+          <div id="idnameofdiv" ></div>
+          <p>TensorFlow is Google Brain's second-generation system. Version 1.0.0 was released on February 11, 2017. While the reference implementation runs on single devices, TensorFlow can run on multiple CPUs and GPUs (with optional CUDA and SYCL extensions for general-purpose computing on graphics processing units). TensorFlow is available on 64-bit Linux, macOS, Windows, and mobile computing platforms including Android and iOS.
+
+      Its flexible architecture allows for the easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices.
+      
+      TensorFlow computations are expressed as stateful dataflow graphs. The name TensorFlow derives from the operations that such neural networks perform on multidimensional data arrays, which are referred to as tensors. During the Google I/O Conference in June 2016, Jeff Dean stated that 1,500 repositories on GitHub mentioned TensorFlow, of which only 5 were from Google.
+      
+      In December 2017, developers from Google, Cisco, RedHat, CoreOS, and CaiCloud introduced Kubeflow at a conference. Kubeflow allows operation and deployment of TensorFlow on Kubernetes.
+      
+      In March 2018, Google announced TensorFlow.js version 1.0 for machine learning in JavaScript.
+      
+      In Jan 2019, Google announced TensorFlow 2.0. It became officially available in Sep 2019.      
+      In May 2019, Google announced TensorFlow Graphics for deep learning in computer graphics.</p>
+        
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FDUfaYsFQrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </br>
+        </br>
+          
+    </main>
+    <label for="indexhtml">index.html</label>
+    <xmp id="indexhtml">
+      <html>
+        <head>
+            <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    
+            <code><script src="p5.min.js"></script></code>
+            <script src="scketch2_polynom.js"></script>
+        </head>
+        <body>
+            <main></main>
+        </body>
+    </html>
+      </xmp>
+    <label for="scketchJS">scketch.js file</label>
+    <xmp id="scketchJS">
+<script>
+        let x_vals = [];
+        let y_vals = [];
+        let a, b, c, d;
+        
+        const learningRate = 0.2;
+        const optimizer = tf.train.sgd(learningRate);
+        
+        function setup(){
+         
+          let mycanvas = createCanvas(400,400);
+          mycanvas.parent("idnameofdiv");
+          a = tf.variable(tf.scalar(random(-1, 1)));
+          b = tf.variable(tf.scalar(random(-1, 1)));
+          c = tf.variable(tf.scalar(random(-1, 1)));
+          d = tf.variable(tf.scalar(random(-1, 1)));
+        }
+        
+        function loss(pred, labels){
+           return pred.sub(labels).square().mean();
+        }
+        
+        function predict(x){
+            const xs = tf.tensor1d(x);
+            // ys = a*xs^3+b*xs^2+c*xs+d
+            const ys = xs.pow(tf.scalar(3)).mul(a)
+            .add(xs.square().mul(b))
+            .add(xs.mul(c))
+            .add(d);
+            return ys;
+        }
+        function mousePressed(){
+          let x = map(mouseX, 0, width, -1, 1);
+          let y = map(mouseY, 0, height, 1, -1);
+          x_vals.push(x);
+          y_vals.push(y);
+        }
+        function draw(){
+        tf.tidy(() =>{
+         if(x_vals.length > 0){
+            const ys = tf.tensor1d(y_vals);
+            optimizer.minimize(()=>loss(predict(x_vals),ys));
+         }
+        });
+            background(0);
+            stroke(255);
+            strokeWeight(4);
+            for(let i=0;i<x_vals.length;i++){
+                let px = map(x_vals[i], -1, 1, 0, width);
+                let py = map(y_vals[i], -1, 1, height, 0);
+                point(px,py);
+             }
+             //tf.tidy(()=>{
+             const curveX = [];
+             for(let x = -1 ; x<1.01 ; x+=0.05){
+                 curveX.push(x);
+             }
+             const ys = tf.tidy(()=>predict(curveX));
+             let curveY = ys.dataSync();
+             ys.dispose();
+             //ys.print();
+             beginShape();
+             noFill();
+             stroke(255);
+             strokeWeight(2);
+             for(let i=0;i<curveX.length;i++){
+                 let x = map(curveX[i], -1, 1, 0, width);
+                 let y = map(curveY[i], -1, 1, height, 0);
+                 vertex(x, y);
+             }
+             endShape();
+        
+            //});
+            // limit the number of tensors 
+             
+             
+        }
+</script>
+      </xmp>
+    <script src="../js/core/jquery.3.2.1.min.js"></script>
+    </body>
+  </html>
