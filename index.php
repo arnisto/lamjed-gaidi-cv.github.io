@@ -328,7 +328,7 @@
   </div>
 </div>
 <div class="section">
-<div style="margin: auto; width: 60%;padding: 10px; text-align: center;"><a href="blogs/p5.php" style="text-decoration:none;"><h3>more details ...</h3></a></div>
+<div style="margin: auto; width: 60%;padding: 10px; text-align: center;"><a href="blogs/interactive-polynomial-regression.html" style="text-decoration:none;"><h3>more details ...</h3></a></div>
 </div>
 <div class="section">
   <div class="container cc-education">
