@@ -73,7 +73,7 @@
             <div class="h4 mt-0 title">Basic Information</div>
             <div class="row">
               <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">23</div>
+              <div class="col-sm-8">24</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
@@ -136,16 +136,64 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap/jquery/ajax</span>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">PHP</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">PHP/symfony</span>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Python (AI , django , Flask )</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Reactjs - vuejs</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Sql/mysql   nosql/mongodb</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">React native for mobile app</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Node.js (express.js)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">git (gitlab-github)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
               </div>
             </div>
           </div>
@@ -184,10 +232,32 @@
             </div>
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.PNG" alt="Image"/>
+                  <figure class="cc-effect"><img src="images/project-4.PNG" alt="Image"/>
                     <figcaption>
                       <div class="h4">Search Engine Project</div>
                       <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+
+          </div>
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project_ia_1.PNG" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">AI project</div>
+                      <p>Image classifier CNN</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project_ia_2.PNG" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">AI project</div>
+                      <p>Image classifier CNN</p>
                     </figcaption>
                   </figure></a></div>
             </div>
@@ -275,15 +345,56 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>September 2020 - Present</p>
+            <p>Février 2021 - present</p>
+            <div class="h5">DigiCross</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">IT Engineering  ( full stack developer - web/mobil )</div>
+            <p><b> Digital transformation</b> is often viewed as an implementation of digital technologies into all areas of <b>business</b> in order to build more sustainable relationships and better understand the needs of customers.<b> digital transformation is the force that moves businesses forward </b>.
+            </br>So during the end of my study project, I contributed with digicross to help SMEs about their digital development.
+           <a href="#"><b>More about</b></a> </br>   <a href="#">Demo</a>   
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>décembre 2020 - février 2021</p>
+            <div class="h5">SLMG brand management group</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">IT Engineering Student ( IT-marcketing Developer )</div>
+            <p>The <b>SLMG web developer internship </b> was a great experience that helped me develop soft skills of course, but the best for me was getting to know a different culture from all over the world, the most important of them is American culture,
+            And more skills that are among the most important skills today, such as <b> management, marketing, design, human resource management and communication </b>.</br>
+           <a href="https://www.slmgbrand.com/"><b> SLMG brand </b></a> </br>   <a href="https://cc0b1c94-2540-4854-b9e5-0f2977b27463.filesusr.com/ugd/1ca38f_6eca75e953084b0089eb8b8a7f34484c.pdf">Internship</a>   
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>September 2020 - février 2021</p>
             <div class="h5">Monoprix</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">IT Engineering Student ( Web Developer - Data Scientist )</div>
-            <p>For a business to operate efficiently, it needs some idea of what the future will look like. A forecast provides this look as a foundation upon which to plan. Every functional group within a business benefits from a forecast.
-              so we help monoprix is Senior managers and finance teams using forecasts to prepare and evaluate financial plans, capitalize on production, and assess needs and logistics. we help them by inform critical decisions on how to allocate resources and set overhead levels within a business: personnel, rent, utilities, and other overhead. .</p>
+            <p>For a business to operate efficiently, it needs some idea of what the <b>future will look like</b>. A forecast provides this look as a foundation upon which to plan. Every functional group within a business benefits from a forecast.
+              so we help <a href="https://www.monoprix.tn/"><b> monoprix</b></a> is Senior managers and finance teams using forecasts to prepare and evaluate financial plans, capitalize on production, and assess needs and logistics.<b> we help them by inform critical decisions on how to allocate resources and set overhead levels within a business: personnel, rent, utilities, and other overhead </b>.
+              <a href="file/slidesMonoprixSolution.pdf"><b>More about</b></a></br>
+              <a href="file/demo-monoprix.mp4"><b>Demo</b></a>
+              </p>
           </div>
         </div>
       </div>
@@ -300,10 +411,10 @@
           <div class="card-body">
             <div class="h5">IT Engineering Student - Web Developer</div>
             <p>In our age of technologies and the Internet, search engines have become powerful tools allowing for a variety of operations so:
-              The Idea: finding the need to look for specific academic documents we decided to develop a search engine web app that will help students, professors and administration employees in our university sup'com by making the search of documents much easier.
-              First, I have build a basic search engine that downloads pages,articles,files and matches your search query against their contents.
-              Then I have implement PageRank algorithm to improve the results,and develope an online text editor.
-              Finally,I have played with one of computer science’s powertools - indexing - to speed up the search and make the ranking even better.
+              The Idea: finding the need to look for specific academic documents we decided to develop a <a href="https://github.com/arnisto/search-engine"><b> search engine web app</b></a> that will help students, professors and administration employees in our university sup'com by<b> making the search of documents much easier</b>.
+              First, I have build a <b> basic search engine </b>that downloads pages,articles,files and matches your search query against their contents.
+              Then I have implement<b> PageRank algorithm </b>to improve the results,and <b>develope an online text editor</b>.
+              Finally,I have played with one of <b><i>computer science’s powertools </i></b>- <b>indexing</b> - to speed up the search and make the ranking even better.
             </p>
           </div>
         </div>
@@ -320,7 +431,7 @@
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Intern</div>
-            <p>I did a summer internship with Tunisie Telecom, it was good overall as it was my first experience communicating and interacting with customers The employees were friendly and very helpful.</p>
+            <p>I did a summer internship with <a href="https://www.tunisietelecom.tn/Fr"><b> Tunisie Telecom</b></a>, it was good overall as it was my first experience communicating and interacting with customers The employees were friendly and very helpful.</p>
           </div>
         </div>
       </div>
@@ -346,7 +457,7 @@
             <div class="h5"> The National Diploma in telecommunication engineering (specialty: digital services and artificial intelligence)</div>
             <p class="category">HIGHER SCHOOL OF COMMUNICATION TUNIS - SUP'COM - TUNISIA</p>
             <p>Use creative thinking and engineering skills, work as a part of a team, travel, make a difference, earn a good salary. Engineering's a great career!
-              so After completing the competitive entry to engineering schools and getting a great rank (one of the top 10 first competitors), i choose the HIGHER SCHOOL OF COMMUNICATION TUNIS, The top university in tunisia in this field, crowned by the obtainment of the National Diploma in telecommunication engineering.
+              so After completing the competitive entry to engineering schools and getting a great rank (one of the top 10 first competitors), i choose the <a href="http://www.supcom.mincom.tn/Fr/accueil_46_3"><b> HIGHER SCHOOL OF COMMUNICATION TUNIS </b></a>, The top university in tunisia in this field, crowned by the obtainment of <b>the National Diploma in telecommunication engineering</b>.
             </p>
           </div>
         </div>
@@ -362,14 +473,14 @@
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">National Contest (Rank: 9 / 740)
+            <div class="h5">National Contest (Rank: <b> 9 </b>/ 740)
             </div>
             <p class="category">PREPARATORY INSTITUTE FOR ENGINEERING STUDIES OF NABEUL (IPEIN) </p>
-            <p>I  attend two years of preparatory courses, in the preparatory
-              institutes of scientific and technical studies in NABEUL, culminating in a national competitive
+            <p>I  attend two years of preparatory courses, in the <a href="http://www.ipein.rnu.tn/Fr/accueil_46_3"><b> preparatory
+              institutes of scientific and technical studies in NABEUL </b></a>, culminating in a national competitive
               examination. It is worth mentioning that at the end of the second year of the preparatory
-              cycle, I was awarded the Diploma of Undergraduate University Studies (DEUPC:
-              Diplôme des Etudes Universitaires de Premier Cycle).
+              cycle, I was awarded the <b>Diploma of Undergraduate University Studies (DEUPC:
+              Diplôme des Etudes Universitaires de Premier Cycle)</b>.
                </p>
           </div>
         </div>
@@ -390,7 +501,7 @@
             <p>The science baccalaureate is hard, and it is tedious. I have to work a lot in science. I had a lot of difficulty integrating certain notions in maths and physics in the sense that I could not derive any interest from them in my future life. I kept wondering what good these 4 stranger formulas would serve me in life,
               Later, with hindsight, we realize that, yes, we ask ourselves these questions in the final year, because we project what we learn to our future profession,
               To have lived during all my years of college and high school this weekly evaluation, I find that it was beneficial to us in the regularity of our learning,
-              Finally I had my baccalaureate with honors.
+              <b>Finally I had my baccalaureate with honors</b>.
             </p>
           </div>
         </div>
@@ -460,7 +571,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
+                    <form action="https://formspree.io/lamjed.gaidi070@gmail.com" method="POST">
                       <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                       <div class="row mb-3">
                         <div class="col">
