@@ -44,7 +44,7 @@
       <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/lamjed2.jpg" alt="Image"/></a></div>
+          <div class="cc-profile-image"><a href="#"><img src="images/lamjed3.jpg" alt="Image"/></a></div>
           <div class="h2 title">Gaidi Lamjed</div>
           <p class="category text-white">IT Engineer (the high school of communications of Tunis supcom), Web Developer  </p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="file/monCV_version_anglais.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
         </div>
@@ -170,11 +170,7 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Sql/mysql   nosql/mongodb</span>
               <div class="progress">
-<<<<<<< HEAD
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-=======
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">75%</span>
->>>>>>> dabb0d91bc44d55dd0fe6ce2e76fa2a8a45baa82
               </div>
             </div>
           </div>
