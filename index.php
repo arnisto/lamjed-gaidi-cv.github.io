@@ -170,7 +170,11 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Sql/mysql   nosql/mongodb</span>
               <div class="progress">
+<<<<<<< HEAD
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+=======
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">75%</span>
+>>>>>>> dabb0d91bc44d55dd0fe6ce2e76fa2a8a45baa82
               </div>
             </div>
           </div>
