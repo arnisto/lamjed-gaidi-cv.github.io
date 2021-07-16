@@ -354,7 +354,9 @@
             <div class="h5">IT Engineering  ( full stack developer - web/mobil )</div>
             <p><b> Digital transformation</b> is often viewed as an implementation of digital technologies into all areas of <b>business</b> in order to build more sustainable relationships and better understand the needs of customers.<b> digital transformation is the force that moves businesses forward </b>.
             </br>So during the end of my study project, I contributed with digicross to help SMEs about their digital development.
-           <a href="#"><b>More about</b></a> </br>   <a href="#">Demo</a>   
+           <a href="file/Rapport_PFE_Gaidi_Lamjed_SUPCOM_SNI_SS2.pdf"><b>More about</b></a> </br>   
+           <a href="https://drive.google.com/file/d/1Z-Xzky8rTCtccZlNnewZ6ImmTaaVOdtt/view?usp=sharing">Demo CI/CD</a></br><a href="https://drive.google.com/file/d/1hBjrUVQ9cDJfGMnCASX2P6ysza97Z1H1/view?usp=sharing">Demo Agri-Location</a>    
+           </br>   <a href="file/lamjedGaidi_pres_PFE.pdf">Présentation</a> 
             </p>
           </div>
         </div>
