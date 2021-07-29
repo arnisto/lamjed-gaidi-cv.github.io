@@ -159,7 +159,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Reactjs - Vuejs - <a href="file/certificate-of-completion-for-strapi-fundamentals-full-course.pdf">Nextjs</a></span>
+            <div class="progress-container progress-primary"><span class="progress-badge">Reactjs - Vuejs - Nextjs</span>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
               </div>
@@ -184,7 +184,7 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Node.js (express.js) - Strapi</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">Node.js (express.js) - <a href="file/certificate-of-completion-for-strapi-fundamentals-full-course.pdf">Strapi</a></span>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
               </div>
