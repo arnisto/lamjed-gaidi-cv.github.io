@@ -26,6 +26,8 @@
  */
 .certifs {
   background-color: yellow;
+  color: black;
+  border-radius: 5px;
 }
 .bootstrap-switch {
   display: inline-block;
