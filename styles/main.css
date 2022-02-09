@@ -25,9 +25,10 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  */
 .certifs {
-  background-color: yellow;
+  background-color: rgb(158, 124, 12);
   color: black;
   border-radius: 5px;
+  font-weight: bolder;
 }
 .bootstrap-switch {
   display: inline-block;
