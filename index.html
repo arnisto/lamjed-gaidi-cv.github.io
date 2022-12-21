@@ -26,6 +26,8 @@
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
                 <li style="font-weight: bolder;" class="nav-item certifs"><a class="nav-link smooth-scroll" href="blogs/certifs.html">Certifications</a></li>
+                <li style="font-weight: bolder;" class="nav-item certifs"><a class="nav-link smooth-scroll" href="blogs/interactive-polynomial-regression.html">Blogs</a></li>
+
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
@@ -221,17 +223,17 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary">Agile (Scrum)</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">git (gitlab-github)</span>
-              <div class="progress">
                 <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
               </div>
             </div>
-          </div> -->
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Toeic (855)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -640,7 +642,7 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
+                          <button onclick="onSend()"  class="btn btn-primary" >Send</button>
                         </div>
                       </div>
                     </form>
@@ -648,12 +650,14 @@
                 </div>
                 <div class="col-md-6">
                   <div class="card-body">
+                    <p class="mb-0"><strong>Name </strong></p>
+                    <p class="pb-2">Gaidi lamjed / IT engineer</p>
                     <p class="mb-0"><strong>Address </strong></p>
                     <p class="pb-2">ariana, tunis</p>
                     <p class="mb-0"><strong>Phone</strong></p>
                     <p class="pb-2">+216-25249215</p>
                     <p class="mb-0"><strong>Email</strong></p>
-                    <p>lamjed.gaidi@supcom.tn</p>
+                    <p>lamjed.gaidi070@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -678,5 +682,20 @@
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script>
+      function onSend() {
+          try {
+            const data = {
+              url:window.location.href ||"",
+              text:"",
+              title:"",
+            }
+            navigator.share(data)
+
+          } catch (error) {
+            alert("please try again something went wrong")
+          }
+      }
+      </script>
   </body>
 </html>
