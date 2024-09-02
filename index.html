@@ -305,7 +305,7 @@
 
 <div class="section" id="experience">
   <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience (3 years & 5 months)</div>
+    <div class="h4 text-center mb-4 title" id="workExperience"></div>
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -878,6 +878,26 @@
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
   })();
+//-----------------------------------------------------------------------------------
+        // Function to calculate work experience
+        function calculateWorkExperience() {
+            const startDate = new Date('2021-01-01'); // January 2021
+            const currentDate = new Date();
+
+            let years = currentDate.getFullYear() - startDate.getFullYear();
+            let months = currentDate.getMonth() - startDate.getMonth();
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            return `${years} years & ${months} months`;
+        }
+
+        // Set the calculated work experience in the HTML
+        document.getElementById('workExperience').innerText = `Work Experience (${calculateWorkExperience()})`;
+ 
   </script>
   <!--End of Tawk.to Script-->
   </body>
