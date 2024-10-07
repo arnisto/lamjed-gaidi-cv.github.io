@@ -107,20 +107,22 @@
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/lamjed.gaidi.1/" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/gaidi_lamjed" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/lamjedarnisto/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/lamjed.gaidi.1/" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/gaidi_lamjed" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/lamjedarnisto/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
           
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <div class="section" id="about">
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-offset="10">
       <div class="row">
         <div class="col-lg-7 col-md-12">
           <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
+            <div class="h4 mt-0 title">About </div>
             <p><strong>Full Stack Developer & Technical Leader:</strong> I am a Software Engineer and Full Stack Developer with extensive experience in building robust applications using a variety of technologies. My expertise includes the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong> for web development and <strong>React Native and Flutter</strong> for cross-platform mobile app development.</p>
             
             <p><strong>Technical Skills:</strong> I am proficient in both front-end and back-end development, with a strong focus on <strong>clean, maintainable code</strong> and adherence to best practices. I am well-versed in <strong>GitOps principles</strong> and enthusiastic about working with <strong>cloud technologies</strong>.</p>
@@ -141,7 +143,7 @@
             
             <div class="row mb-3">
               <div class="col-sm-4"><strong class="text-uppercase">Experience:</strong></div>
-              <div class="col-sm-8"><span class="font-weight-bold">3.5 years</span></div>
+              <div class="col-sm-8"><span class="font-weight-bold" id="workJustExperience">4.5 years</span></div>
             </div>
             
             <div class="row mb-3">
@@ -180,6 +182,7 @@
     </div>
   </div>
 </div>
+
 <div class="section" id="skill">
   <div class="container">
     <div class="h4 text-center mb-4 title">Professional Skills</div>
@@ -310,7 +313,7 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>October 2023 - Present</p>
+            <p>October 2022 - Present</p>
             <div class="h5">Tech-Expert</div>
           </div>
         </div>
@@ -335,7 +338,7 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>June 2021 - October 2023</p>
+            <p>June 2020 - October 2023</p>
             <div class="h5">Digicross</div>
           </div>
         </div>
@@ -841,7 +844,7 @@
     </div>
     <footer class="footer">
       <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
-      <div class="h4 title text-center">Gaidi Lamjed</div>
+      <h1 class="h4 title text-center">Gaidi Lamjed</h1>
       <div class="text-center text-muted">
         <p>&copy; My web site CV. All rights reserved.</p>
       </div>
@@ -881,7 +884,7 @@
 //-----------------------------------------------------------------------------------
         // Function to calculate work experience
         function calculateWorkExperience() {
-            const startDate = new Date('2021-01-01'); // January 2021
+            const startDate = new Date('2020-01-01'); // January 2021
             const currentDate = new Date();
 
             let years = currentDate.getFullYear() - startDate.getFullYear();
@@ -897,7 +900,8 @@
 
         // Set the calculated work experience in the HTML
         document.getElementById('workExperience').innerText = `Work Experience (${calculateWorkExperience()})`;
- 
+        document.getElementById('workJustExperience').innerText = `${calculateWorkExperience()}`;
+
   </script>
   <!--End of Tawk.to Script-->
   </body>
