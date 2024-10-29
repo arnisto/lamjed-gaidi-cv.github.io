@@ -148,7 +148,7 @@
             
             <div class="row mb-3">
               <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8"><span class="font-weight-bold">27</span></div>
+              <div class="col-sm-8"><span id="myAge" class="font-weight-bold"></span></div>
             </div>
             
             <div class="row mb-3">
@@ -974,10 +974,25 @@
 
             return `${years} years & ${months} months`;
         }
+        function calculateMyAge() {
+            const startDate = new Date('1997-04-07'); 
+            const currentDate = new Date();
+
+            let years = currentDate.getFullYear() - startDate.getFullYear();
+            let months = currentDate.getMonth() - startDate.getMonth();
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            return `${years}y & ${months}m`;
+        }
 
         // Set the calculated work experience in the HTML
         document.getElementById('workExperience').innerText = `Work Experience (${calculateWorkExperience()})`;
         document.getElementById('workJustExperience').innerText = `${calculateWorkExperience()}`;
+        document.getElementById('myAge').innerText = calculateMyAge();
 
   </script>
   <!--End of Tawk.to Script-->
