@@ -1,0 +1,129 @@
+.blog-cards {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+/* Container for the blog cards */
+#medium-blogs-section {
+  display: grid;
+  gap: 100px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* Card styles */
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card-content {
+  padding: 15px;
+}
+
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  #medium-blogs-section {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
+
+.blog-card-content h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.blog-card-content p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.blog-card-footer a {
+  text-decoration: none;
+  color: #0073b1;
+  font-size: 14px;
+}
+
+.blog-card-footer a:hover {
+  text-decoration: underline;
+}
+
+.blog-author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.blog-author {
+  display: flex;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.blog-categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.category {
+  background-color: #0073b1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #005f8e;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}

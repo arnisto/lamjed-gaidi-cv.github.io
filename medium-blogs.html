@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore my latest blogs about technology, software development, and best practices in the tech industry. Stay up to date with posts on tools, languages, and frameworks."
+    />
+    <meta name="author" content="Lamjed Gaidi" />
+    <meta property="og:title" content="My Tech Blogs on Medium" />
+    <meta
+      property="og:description"
+      content="Explore my latest blogs about technology, software development, and best practices in the tech industry."
+    />
+    <meta property="og:image" content="https://example.com/path-to-image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Tech Blogs on Medium" />
+    <meta
+      name="twitter:description"
+      content="Explore my latest blogs about technology, software development, and best practices in the tech industry."
+    />
+    <meta
+      name="twitter:image"
+      content="https://example.com/path-to-image.jpg"
+    />
+    <title>My Tech Blogs on Medium</title>
+    <link rel="stylesheet" href="./blog-card.css" />
+    <style>
+        /* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.header ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.header li {
+  margin-bottom: 10px;
+}
+
+.header strong {
+  font-weight: bold;
+}
+
+/* Categories Section */
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.blog-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.category:focus {
+  outline: 2px solid #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .blog-categories h2 {
+    font-size: 1.5rem;
+  }
+
+  .category {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+    
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        body {
+          padding: 0; /* Remove padding for mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Welcome to My Tech Blog</h1>
+        <p>
+          Welcome to my personal corner of the web, where I dive deep into the ever-evolving world of technology! 
+          On this blog, I explore the latest trends, frameworks, and tools that are shaping the future of software development.
+          Whether you're a seasoned developer or just starting out, you'll find valuable insights, tips, and tutorials to level up your skills in areas like full-stack development, cloud computing, DevOps, and more.
+        </p>
+        <p>
+          I focus on topics such as:
+          <ul>
+            <li><strong>Node.js & Express</strong>: Best practices for building scalable server-side applications.</li>
+            <li><strong>Web Development</strong>: Tutorials on front-end and back-end technologies including React.js, Angular, and Vue.js.</li>
+            <li><strong>DevOps & CI/CD</strong>: Building efficient pipelines using GitOps, Docker, Kubernetes, and cloud platforms like AWS and Azure.</li>
+            <li><strong>Programming Languages</strong>: Insights into popular programming languages such as JavaScript, TypeScript, Python, and Go.</li>
+            <li><strong>Tech Insights</strong>: Commentary on the latest industry trends, software architecture, and developer culture.</li>
+          </ul>
+        </p>
+      </div>
+      
+
+    <!-- Categories Section -->
+  <div class="blog-categories">
+  <h2>Browse Categories</h2>
+  <div class="category">Node.js & Express</div>
+  <div class="category">Web Development</div>
+  <div class="category">Tech Insights</div>
+  <div class="category">Full-Stack Development</div>
+  <div class="category">DevOps & CI/CD</div>
+  <div class="category">Programming Languages</div>
+  <div class="category">Cloud Computing</div>
+  <div class="category">Software Architecture</div>
+  <div class="category">JavaScript Frameworks</div>
+  <div class="category">Open-Source Tools</div>
+</div>
+
+
+    <!-- Blog Cards Section -->
+    <div id="medium-blogs-section"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        © 2024 Lamjed Gaidi. All rights reserved. |
+        <a href="https://medium.com/@lamjed.gaidi070" target="_blank"
+          >Follow me on Medium</a
+        >
+      </p>
+    </div>
+
+    <script src="./generate-blog-cards.js"></script>
+  </body>
+</html>
